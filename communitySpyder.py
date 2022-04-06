@@ -42,14 +42,12 @@ class App(tk.Frame):
         self.akDesc.grid(column=0, row=6,sticky='w')
         self.akInput = tk.Entry(self.window, show = None,font = ('Arial',10),width = 60)
         self.akInput.grid(column=1, row=6,sticky='w')
-        self.aktip = tk.Label(self.window, text="百度地图密钥ak") # wp10fAoZ9mUiMdoo3UTBPoPwA2C8mDyn
+        self.aktip = tk.Label(self.window, text="百度地图密钥ak") # 
         self.aktip.grid(column=1,row=7,sticky='w')
         self.button = tk.Button(self.window,text="开始", command=self.clicked)
         self.button.grid(row=8,column=0,columnspan=2)
 
     def clicked(self):
-        # self.start.insert("insert","已经开始执行")
-        # self.start.update()
         self.xiaoqus = []
         self.city = self.cityInput.get()
         self.county = self.countyInput.get()
